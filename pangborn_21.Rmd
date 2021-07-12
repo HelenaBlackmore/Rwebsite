@@ -1,0 +1,8 @@
+---
+title: "Pangborn 2021"
+subtitle: "Using mediation analysis to evaluate the role of expectations in taste and flavour perception"
+---
+
+![Expectations mediating the effect of extrinsic cues. A: The effect of sensory descriptors and beer colour on expected and perceived bitterness (A), refreshment (B), liking (C) and body (D). Numeric values represent estimates of the direct effects (a, b, c’). Presence of a line in the mediation model denotes a presence and a nature of a relationship between the variables:  Solid:direct effect (CI excl. 0), bold dashed: indirect and direct effect (CI excl. 0), dashed: indirect effect (CI excl. 0)](images/med_all.png)
+
+<!-- rmarkdown::render_site() -->

@@ -1,0 +1,15 @@
+---
+title: "Helena Blackmore"
+---
+
+
+
+<br>
+<br>
+
+I am a postgraduate student at University of Sussex. I am in the final year of my PhD. I am a member of the 
+[Sussex Ingestive behaviour group](http://www.sussex.ac.uk/psychology/sibg/) and I research expectations and tehir role in ingestive and post-ingestive experience.
+
+<!-- run rmarkdown::render_site() to render site -->
+
+<div class = "banner"> Note this website is under construction! </div>

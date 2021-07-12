@@ -1,0 +1,17 @@
+---
+title: "publications"
+
+---
+
+<a href=https://doi.org/10.1016/j.foodqual.2019.103855 target="_blank">![The effect of implicit and explicit extrinsic cues on hedonic and sensory expectations in the context of beer](images/s1_screenshot.png)</a>
+
+<a href=https://doi.org/10.1016/j.foodqual.2021.104326 target="_blank">![Ataste of things to come: The effect of extrinisc and intrinsic cues on perceived properties of beer mediated by expectations](images/s2_screenshot.png)</a>
+
+
+```{css, echo = FALSE}
+img {
+  width: 30%;
+  margin: 30px
+}
+
+```

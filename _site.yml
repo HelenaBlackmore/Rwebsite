@@ -1,0 +1,35 @@
+name: "helena_website"  
+author: "Helena Blackmore"  
+output_dir: "docs"  
+output:  
+  html_document:  
+    css: style.css
+    self_contained: no  
+    theme: flatly  
+navbar:  
+  title: "Helena Blackmore"  
+  left: 
+    - text: ""
+      icon: fa-home
+      href: index.html
+    
+    - text: "projects"
+      icon: fa-project-diagram
+      menu:
+      - text: "conferences"
+      - text: "PANGBORN 21 results image"
+        href: pangborn_21_results.html
+      - text: "PANGBORN 21 poster"
+        href: pangborn_21.html
+    
+    - text: "publications"
+      icon: fa-book
+      href: publications.html
+    
+    - text: "contact me"
+      icon: fa-envelope
+      href: contact.html
+    
+
+    
+    
