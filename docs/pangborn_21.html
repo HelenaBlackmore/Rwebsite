@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+<title>Using mediation analysis to evaluate the role of expectations in taste and flavour perception</title>
+
+<script src="pangborn_21_files/header-attrs-2.9/header-attrs.js"></script>
+
+
+
+
+
+<link rel="stylesheet" href="style_pan21.css" type="text/css" />
+
+<!--
+Font-awesome icons ie github or twitter
+-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/brands.css" integrity="sha384-n9+6/aSqa9lBidZMRCQHTHKJscPq6NW4pCQBiMmHdUCvPN8ZOg2zJJTkC7WIezWv" crossorigin="anonymous">
+
+<!--
+Google fonts api stuff
+-->
+<link href='https://fonts.googleapis.com/css?family=Special Elite' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Rasa' rel='stylesheet'>
+
+<!--
+Here are the required style attributes for css to make this poster work :)
+-->
+<style>
+@page {
+size: 46in 32in;
+margin: 0;
+padding: 0;
+background-color: #ffffff;
+}
+body {
+margin: 0px;
+padding: 0px;
+width: 46in;
+height: 32in;
+text-align: justify;
+font-size: 40px;
+background-color: #FFFFFF;
+color: #000000;
+}
+/* RMarkdown Class Styles */
+/* center align leaflet map,
+from https://stackoverflow.com/questions/52112119/center-leaflet-in-a-rmarkdown-document */
+.html-widget {
+margin: auto;
+position: sticky;
+margin-top: 2cm;
+margin-bottom: 2cm;
+}
+.leaflet.html-widget.html-widget-static-bound.leaflet-container.leaflet-touch.leaflet-fade-anim.leaflet-grab.leaflet-touch-drag.leaflet-touch-zoom {
+position: sticky;
+width: 100%;
+}
+pre.sourceCode.r, pre.sourceCode.python {
+background-color: #ffffff20;
+border: solid #4a5759 1mm;
+border-radius: 0.5em;
+padding: 4mm;
+margin: auto;
+margin-top: 1em;
+margin-bottom: 1em;
+/* align-items: center; */
+}
+div.sourceCode {
+background-color: transparent;
+width: 85%;
+margin-left: auto;
+margin-right: auto;
+}
+code.sourceCode.r, code.sourceCode.python {
+background-color: transparent;
+font-size: 20pt;
+border-radius: 2mm;
+}
+code {
+font-size: 25pt;
+font-family: monospace;
+background-color: #4a575924;
+color: #4a5759;
+padding: 1.2mm;
+line-height: 1;
+border-radius: 2mm;
+}
+caption {
+margin-bottom: 10px;
+font-size: 40pt;
+font-style: italic;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #b0c4b120;
+}
+.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td{
+  border-spacing: 0;
+  font-size: 40%;
+  border-style: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 1em;
+  padding-left: 1em;
+  line-height: 1em;
+}
+table {
+  margin: auto;
+}
+th {
+  padding-left: 5mm;
+  padding-right: 5mm;
+}
+.caption {
+font-size: 20pt;
+font-style: italic;
+padding-top: 0;
+}
+.references {
+font-size: 15px;
+line-height: 90%;
+}
+/* Create three unequal columns that floats next to each other */
+.column {
+float: left;
+padding: 0px;
+}
+.outer {
+width: 46in;
+height: 32in;
+-webkit-column-count: 2; /* Chrome, Safari, Opera */
+-moz-column-count: 2; /* Firefox */
+column-count: 2;
+-webkit-column-fill: auto;
+-moz-column-fill: auto;
+column-fill: auto;
+-webkit-column-rule-width: 0.35;
+-moz-column-rule-width: 0.35;
+column-rule-width: 0.35;
+-webkit-column-rule-style: solid;
+-moz-column-rule-style: solid;
+column-rule-style: solid;
+-webkit-column-rule-color: black;
+-moz-column-rule-color: black;
+column-rule-color: black;
+-webkit-column-gap: calc(0.35 * 100%);
+background-color: #ffffff;
+font-family: Rasa;
+color: #000000;
+}
+span.citation {
+  color: #4a5759;
+  font-weight: bold;
+}
+a {
+text-decoration: none;
+color: #4a5759;
+}
+#title {
+font-size: 25;
+text-align: left;
+margin: 0;
+line-height: 90%;
+border-bottom: 0;
+}
+#author {
+color: #b0c4b1;
+margin: 0;
+text-align: left;
+line-height: 65%;
+font-size: 1.17em;
+}
+#affiliation {
+padding-top: 1em;
+color: #b0c4b1;
+font-style: italic;
+font-size: 25px;
+margin: 0;
+}
+sup {
+color: #edafad;
+}
+.affiliation sup {
+font-size: 20px;
+}
+.author sup {
+font-size: 30px;
+}
+.author_extra {
+color: #4a5759;
+margin: 0;
+line-height: 85%;
+font-size: 35px;
+}
+.outer h1 {
+text-align: center;
+margin-top: 0.5in;
+margin-bottom: 0.5in;
+}
+.outer h2 {
+text-align: center;
+}
+.outer p {
+color: #000000;
+}
+.outer ol {
+text-align: left;
+}
+.main {
+width: calc(46in * 0.35);
+height: 32in;
+position: absolute;
+margin-left: calc(46in * ((1 - 0.35) / 2));
+background-color: #b0c4b1;
+color: #FFFFFF90;
+font-family: Special Elite;
+background-image: linear-gradient(#b0c4b1 50%, #4a5759);
+}
+.main strong {
+color: #FFFFFF;
+}
+img.main-img-left {
+width: 20%;
+left: 0.5in;
+bottom: 0.2in;
+position: absolute;
+}
+img.main-img-right {
+width: 18%;
+right: 0.5in;
+bottom: 0.2in;
+position: absolute;
+}
+.main p {
+padding-top: 20%;
+font-size: 150px;
+text-align: left;
+}
+.fab {
+color: #b0c4b1;
+font-size: 25px;
+}
+.twitter, i {
+color: #b0c4b1;
+font-size: 35px;
+text-decoration: none;
+}
+a.email {
+text-decoration: none;
+color: #b0c4b1;
+font-size: 35px;
+}
+.envelope {
+color: #b0c4b1;
+font-size: 5px;
+text-decoration: none;
+}
+.globe {
+color: #b0c4b1;
+font-size: 5px;
+text-decoration: none;
+}
+.github > .fab {
+color: #b0c4b1;
+font-size: 40px;
+text-decoration: none;
+}
+.globetext {
+color: #b0c4b1;
+font-size: 35px;
+text-decoration: none;
+}
+.poster_wrap {
+width: 46in;
+height: 32in;
+padding: 0cm;
+background-color: #ffffff;
+}
+span > #tab:mytable {
+  font-weight: bold;
+}
+.section {
+  padding-left: 10mm;
+  padding-right: 10mm;
+}
+.main p {
+  padding-left: 30mm;
+  padding-right: 30mm;
+}
+.main_pic {
+  width: 35%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.orcid img {
+  width: 3%;
+}
+</style>
+</head>
+<body>
+
+
+<div class="poster_wrap">
+<div class="column outer">
+<br>
+<div class="title section">
+<h1 id="title">Using mediation analysis to evaluate the role of expectations in taste and flavour perception</h1>
+<br>
+<h3 id="author" class="author">
+
+Helena Blackmore<sup> 1, <a class="orcid" href="https://orcid.org/0000-0002-5867-0571"><img src="https://raw.githubusercontent.com/brentthorne/posterdown/master/images/orcid.jpg"></a></sup><br>
+<a class="twitter" href="https://mobile.twitter.com/Helena_Blackmor"><i class="fab fa-twitter"></i>&nbsp;@Helena_Blackmor</a> <br>
+
+<a class='envelope'><i class="fas fa-envelope"></i></a> <a href="mailto:helena.blackmore@sussex.ac.uk" class="email">helena.blackmore@sussex.ac.uk</a> <br>
+  </h3>
+
+<h5 id="author_extra" class="author_extra">
+ Claire Hidrio<sup>2</sup>
+ Martin R. Yeomans<sup>1, <a class="orcid" href="https://orcid.org/0000-0003-1436-1483"><img src="https://raw.githubusercontent.com/brentthorne/posterdown/master/images/orcid.jpg"></a></sup>
+</h5>
+
+<p id="affiliation" class="affiliation">
+<sup>1</sup> School of Psychology, University of Sussex, Brighton, UK<br> <sup>2</sup> AB InBev, Belgium
+</p>
+
+</div>
+<div id="why" class="section level2 heading">
+<h2>Why?</h2>
+<div class="box">
+…To investigate and quantify the relationship between product-related cues, expectations, and sensory perception in the context of reduced-alcohol beer
+</div>
+</div>
+<div id="how" class="section level2 heading">
+<h2>How?</h2>
+<div class="line-block">       In a mixed design experiment, participants (<em>n</em> = 87) viewed <strong>label-based sensory information</strong> (“bitter,” “standard” and no label) and tasted <strong>beer samples differing in colour and alcohol content</strong>. Participants first rated samples without any visual cues (blind). Subsequently they examined visual cues (label and beer colour), rated <strong>expected</strong>, and after tasting, <strong>perceived bitterness, refreshment, liking and body</strong> of beer. Samples were rated on a 0-100 VAS. The procedure, beer labels and samples are illustrated below in Figures <a href="#fig:figlabels">1</a>, <a href="#fig:procedure">2</a> and <a href="#fig:samples">3</a>. We used the <code>bmlm</code><span class="citation"><sup><a href="#ref-vuorre_within-subject_2018" role="doc-biblioref">1</a></sup></span> R package to perform Bayesian within-subjects mediation analysis.</div>
+<div class="figure" style="text-align: center"><span id="fig:figlabels"></span>
+<img src="images/labels_all.png" alt="**Example of ficticious beer labels used in the experiments. **" width="50%" />
+<p class="caption">
+Figure 1: <strong>Example of ficticious beer labels used in the experiments. </strong>
+</p>
+</div>
+<div class="figure" style="text-align: center"><span id="fig:procedure"></span>
+<img src="images/sensory1_procedure.jpg" alt="**The experimental procedure in the blind and experimental tasting sessions**" width="100%" />
+<p class="caption">
+Figure 2: <strong>The experimental procedure in the blind and experimental tasting sessions</strong>
+</p>
+</div>
+<div class="figure" style="text-align: center"><span id="fig:samples"></span>
+<img src="images/beeer_study3.JPG" alt="**Beer samples presented to participants **" width="35%" />
+<p class="caption">
+Figure 3: <strong>Beer samples presented to participants </strong>
+</p>
+</div>
+</div>
+<div id="what" class="section level2 heading">
+<h2>What?</h2>
+<div class="link_prompt">
+Click on the image to enlarge it
+</div>
+<a href= "https://helenablackmore.github.io/Rwebsite/pangborn_21_results.html" >
+<div class="figure" style="text-align: center"><span id="fig:results"></span>
+<img src="images/med_all.png" alt="**Results of mediation analysis ** /nThe effect of descriptors and beer colour on expected and perceived bitterness (A), refreshment (B), liking (C) and body (D). Numeric values represent estimates of the direct effect with the indirect effect in brackets below. Presence of a line in the mediation model denotes a presence and a nature of a relationship between the variables. Solid:direct effect, bold dashed: indirect and direct effect, dashed: indirect effect" width="100%" />
+<p class="caption">
+Figure 4: <strong>Results of mediation analysis </strong> /nThe effect of descriptors and beer colour on expected and perceived bitterness (A), refreshment (B), liking (C) and body (D). Numeric values represent estimates of the direct effect with the indirect effect in brackets below. Presence of a line in the mediation model denotes a presence and a nature of a relationship between the variables. Solid:direct effect, bold dashed: indirect and direct effect, dashed: indirect effect
+</p>
+</div>
+<p></a></p>
+</div>
+<div id="so-what" class="section level2 heading">
+<h2>So what?</h2>
+<div class="line-block">     We were able to demonstrate that product-related cues, especially beer colour, can significantly influence consumer’s perception of taste, flavour and mouthfeel and that this effect is reliably mediated by expectations. Based on the results of the study and underlying theoretical underpinnings<span class="citation"><sup><a href="#ref-piqueras-fiszman_sensory_2015" role="doc-biblioref">2</a>,<a href="#ref-spence_food_2016" role="doc-biblioref">3</a></sup></span> we conclude that altered expectations may, indeed be a good way to fine tune consumers’ experience. However we did not replicate our previous findings<span class="citation"><sup><a href="#ref-blackmore_taste_2021" role="doc-biblioref">4</a></sup></span> in terms of liking,perhaps suggesting that actual and labelled alcohol content are stronger predictors of liking than sensory cues and expectations. Better understanding of expectations, especially in the context of taste and flavour perception, and especially liking is necessary.</div>
+<p><br>
+<br></p>
+<div id="acknowledgements" class="section level3 heading">
+<h3>Acknowledgements</h3>
+<p><small> This poster was created in RStudio, using <a href="https://github.com/brentthorne/posterdown/wiki"> <code>posterdown</code><span class="citation"><sup><a href="#ref-R-posterdown" role="doc-biblioref">5</a></sup></span> </a> and other packages:,<span class="citation"><sup><a href="#ref-R-rmarkdown" role="doc-biblioref">6</a></sup></span>,<span class="citation"><sup><a href="#ref-R-rcrossref" role="doc-biblioref">7</a></sup></span>,<span class="citation"><sup><a href="#ref-R-bmlm" role="doc-biblioref">8</a></sup></span>.<span class="citation"><sup><a href="#ref-R-bibtex" role="doc-biblioref">9</a></sup></span><br />
+The poster and associated abstract can be found and downloaded <font size=12> <a href = https://helenablackmore.github.io/Rwebsite/pangborn_21.html > here </a> </font> </small></p>
+</div>
+</div>
+<div id="references" class="section level2 unnumbered heading">
+<h2>References</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" line-spacing="2">
+<div id="ref-vuorre_within-subject_2018" class="csl-entry">
+1. Vuorre, M., &amp; Bolger, N. (2018). Within-subject mediation analysis for experimental data in cognitive psychology and neuroscience. <em>Behavior Research Methods</em>, <em>50</em>(5), 2125–2143. <a href="https://doi.org/10.3758/s13428-017-0980-9">https://doi.org/10.3758/s13428-017-0980-9</a>
+</div>
+<div id="ref-piqueras-fiszman_sensory_2015" class="csl-entry">
+2. Piqueras-Fiszman, B., &amp; Spence, C. (2015). <em>Sensory expectations based on product-extrinsic food cues: <span>An</span> interdisciplinary review of the empirical evidence and theoretical accounts</em>. <em>40</em>. <a href="https://doi.org/10.1016/j.foodqual.2014.09.013">https://doi.org/10.1016/j.foodqual.2014.09.013</a>
+</div>
+<div id="ref-spence_food_2016" class="csl-entry">
+3. Spence, C., &amp; Piqueras-Fiszman, B. (2016). <em>Food <span>Color</span> and <span>Its</span> <span>Impact</span> on <span>Taste</span>/<span>Flavor</span> <span>Perception</span></em>. Woodhead Publishing. <a href="https://doi.org/10.1016/B978-0-08-100350-3.00006-7">https://doi.org/10.1016/B978-0-08-100350-3.00006-7</a>
+</div>
+<div id="ref-blackmore_taste_2021" class="csl-entry">
+4. Blackmore, H., Hidrio, C., &amp; Yeomans, M. R. (2021). A taste of things to come: <span>The</span> effect of extrinsic and intrinsic cues on perceived properties of beer mediated by expectations. <em>Food Quality and Preference</em>, 104326. <a href="https://doi.org/10.1016/j.foodqual.2021.104326">https://doi.org/10.1016/j.foodqual.2021.104326</a>
+</div>
+<div id="ref-R-posterdown" class="csl-entry">
+5. Thorne, B. (2021). <em>Posterdown: Generate PDF conference posters using r markdown</em>. <a href="https://github.com/brentthorne/posterdown">https://github.com/brentthorne/posterdown</a>
+</div>
+<div id="ref-R-rmarkdown" class="csl-entry">
+6. Allaire, J., Xie, Y., McPherson, J., Luraschi, J., Ushey, K., Atkins, A., Wickham, H., Cheng, J., Chang, W., &amp; Iannone, R. (2021). <em>Rmarkdown: Dynamic documents for r</em>. <a href="https://CRAN.R-project.org/package=rmarkdown">https://CRAN.R-project.org/package=rmarkdown</a>
+</div>
+<div id="ref-R-rcrossref" class="csl-entry">
+7. Chamberlain, S., Zhu, H., Jahn, N., Boettiger, C., &amp; Ram, K. (2020). <em>Rcrossref: Client for various CrossRef ’APIs’</em>. <a href="https://CRAN.R-project.org/package=rcrossref">https://CRAN.R-project.org/package=rcrossref</a>
+</div>
+<div id="ref-R-bmlm" class="csl-entry">
+8. Vuorre, M. (2019). <em>Bmlm: Bayesian multilevel mediation</em>. <a href="https://github.com/mvuorre/bmlm/">https://github.com/mvuorre/bmlm/</a>
+</div>
+<div id="ref-R-bibtex" class="csl-entry">
+9. Francois, R. (2020). <em>Bibtex: Bibtex parser</em>. <a href="https://github.com/romainfrancois/bibtex">https://github.com/romainfrancois/bibtex</a>
+</div>
+</div>
+</div>
+
+</div>
+<div class="main">
+<p>Modifying expectations may be used to improve consumers’ experience of reduced alcohol beer<br><br> <img src="images/poster_QR.png" class="main_pic" /><br><br> <a href="https://authors.elsevier.com/a/1dMfm3O579cHHj" class="paper-link">click to read our new article</a><br><br> <img src="images/pangborn_logo.jpg" class="pangborn-logo" /></p>
+<img src="images/logo_FBL_left.PNG" class="main-img-left" />
+<img src="images/logo_sussex_right.PNG" class="main-img-right" />
+</div>
+</div>
+
+
+
+</body>
+</html>
