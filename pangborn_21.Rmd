@@ -121,14 +121,14 @@ knitr::include_graphics(here::here("images","med_all.png"))
 ### Acknowledgements {.heading}
 
 <small> This poster was created in RStudio, using <a href="https://github.com/brentthorne/posterdown/wiki"> `posterdown`@R-posterdown  </a> and other packages:`rmarkdown` @R-rmarkdown, `rcrossref`@R-rcrossref, `bmlm` @R-bmlm,`bibtex` @R-bibtex.  
-The poster and associated abstract can be found and downloaded <font size=12> <a href = https://helenablackmore.github.io/Rwebsite/pangborn_21.html > here. </a> </font>  </small> 
+The poster and associated abstract can be found and downloaded <font size=12> <a href = https://helenablackmore.github.io/Rwebsite/pangborn_21.pdf > here. </a> </font>  </small> 
 
 ## References {.heading}
 
 
 
 ```{r save, include=FALSE, eval=TRUE}
-pagedown::chrome_print("pangborn_21.html")
+#pagedown::chrome_print("pangborn_21.html")
 ```
 
 
