@@ -1,8 +1,135 @@
 ---
-title: "Pangborn 2021"
-subtitle: "Using mediation analysis to evaluate the role of expectations in taste and flavour perception"
+title: Using mediation analysis to evaluate the role of expectations in taste and flavour perception
+title_textsize: 25
+author:
+  - name: Helena Blackmore
+    affil: 1
+    twitter: Helena_Blackmor
+    email: helena.blackmore@sussex.ac.uk
+    orcid: 0000-0002-5867-0571
+    main: true
+  - name: Claire Hidrio
+    affil: 2
+  - name: Martin R. Yeomans
+    affil: 1
+    orcid: 0000-0003-1436-1483
+affiliation: 
+  - num: 1
+    address: School of Psychology, University of Sussex, Brighton, UK
+  - num: 2
+    address: AB InBev, Belgium  
+
+main_findings:
+  - "Modifying expectations may be used to improve consumers’ experience of reduced alcohol beer"
+  - '![](images/poster_QR.png){.main_pic}'
+  - '[click to read our new article](https://authors.elsevier.com/a/1dMfm3O579cHHj){.paper-link}'
+  - '![](images/pangborn_logo.jpg){.pangborn-logo}'
+main_width: 0.35
+main_textsize:	"150px"
+main_picwidth:	"35%"
+body_textsize: "40px"
+caption_textsize: "40pt"
+logoleft_name: '![](images/logo_FBL_left.png){.main-img-left}'
+logoright_name: '![](images/logo_sussex_right.png){.main-img-right}'
+primary_colour: '#b0c4b1'
+secondary_colour: '#4a5759'
+accent_colour: '#edafad'
+affiliation_textcol: '#b0c4b1'
+output: 
+  posterdown::posterdown_betterland:
+    self_contained: false
+    pandoc_args: --mathjax
+    highlight: haddock
+    number_sections: false
+link-citations: true
+bibliography: [pangborn21_poster.bib, packages.bib]
+csl: apa-numeric-superscript.csl
+reference_textsize: "15px"
+css: style_pan21.css
+
 ---
 
-![Expectations mediating the effect of extrinsic cues. A: The effect of sensory descriptors and beer colour on expected and perceived bitterness (A), refreshment (B), liking (C) and body (D). Numeric values represent estimates of the direct effects (a, b, c’). Presence of a line in the mediation model denotes a presence and a nature of a relationship between the variables:  Solid:direct effect (CI excl. 0), bold dashed: indirect and direct effect (CI excl. 0), dashed: indirect effect (CI excl. 0)](images/med_all.png)
+```{r libraries, include=FALSE}
+knitr::opts_chunk$set(results = 'asis',
+                      echo = FALSE,
+                      warning = FALSE,
+                      tidy = FALSE,
+                      message = FALSE,
+                      fig.align = 'center',
+                      out.width = "100%")
+options(knitr.table.format = "html")
 
-<!-- rmarkdown::render_site() -->
+
+library(rcrossref)
+library(bibtex)
+library(bmlm)
+
+```
+## Why? {.heading}
+
+<div class="box"> 
+...To investigate and quantify the relationship between product-related cues, expectations, and sensory perception in the context of reduced-alcohol beer </div>
+
+```{r bibtex, include=FALSE}
+knitr::write_bib(c( 'rmarkdown','posterdown',  'rcrossref', 'bibtex','bmlm'), 'packages.bib')
+
+```
+
+## How? {.heading}
+
+|        In a mixed design experiment, participants (*n* = 87) viewed **label-based sensory information** (“bitter”, “standard” and no label) and tasted **beer samples differing in colour and alcohol content**. Participants first rated samples without any visual cues (blind). Subsequently they examined visual cues (label and beer colour), rated **expected**, and after tasting, **perceived bitterness, refreshment, liking and body** of beer. Samples were rated on a 0-100 VAS. The procedure, beer labels and samples are illustrated below in Figures \@ref(fig:figlabels), \@ref(fig:procedure) and \@ref(fig:samples). We used the `bmlm` @vuorre_within-subject_2018 R package to perform Bayesian within-subjects mediation analysis.
+
+```{r figlabels, fig.cap="**Example of ficticious beer labels used in the experiments. **", echo=FALSE , eval=TRUE, out.width="50%"}
+
+knitr::include_graphics(here::here("images","labels_all.png"))
+
+```
+
+```{r procedure, fig.cap="**The experimental procedure in the blind and experimental tasting sessions**", out.width= "100%", echo=FALSE, eval=TRUE}
+
+knitr::include_graphics(here::here("images","sensory1_procedure.jpg" ))
+```
+
+```{r samples, fig.cap="**Beer samples presented to participants **", echo=FALSE , eval=TRUE, out.width="35%"}
+
+knitr::include_graphics(here::here("images","beeer_study3.jpg"))
+
+```
+
+
+## What? {.heading}
+
+<div class = " link_prompt"> Click on the image to enlarge it </div>
+<a href= "https://helenablackmore.github.io/Rwebsite/pangborn_21_results.html" >
+```{r results, fig.cap="**Results of mediation analysis ** /nThe effect of descriptors and beer colour on expected and perceived bitterness (A), refreshment (B), liking (C) and body (D). Numeric values represent estimates of the direct effect with the indirect effect in brackets below. Presence of a line in the mediation model denotes a presence and a nature of a relationship between the variables. Solid:direct effect, bold dashed: indirect and direct effect, dashed: indirect effect", echo=FALSE , eval=TRUE, out.width= "100%"}
+
+knitr::include_graphics(here::here("images","med_all.png"))
+
+```
+</a>
+
+
+ 
+## So what? {.heading}
+
+|      We were able to demonstrate that product-related cues, especially beer colour, can significantly influence consumer’s perception of taste, flavour and mouthfeel and that this effect is reliably mediated by expectations. Based on the results of the study and underlying theoretical underpinnings [@piqueras-fiszman_sensory_2015; @spence_food_2016] we conclude that altered expectations may, indeed be a good way to fine tune consumers’ experience. However we did not replicate our previous findings @blackmore_taste_2021 in terms of liking,perhaps suggesting that actual and labelled alcohol content are stronger predictors of liking than sensory cues and expectations. Better understanding of expectations, especially in the context of taste and flavour perception, and especially liking is necessary.  
+
+
+<br>
+<br>
+
+### Acknowledgements {.heading}
+
+<small> This poster was created in RStudio, using <a href="https://github.com/brentthorne/posterdown/wiki"> `posterdown`@R-posterdown  </a> and other packages:`rmarkdown` @R-rmarkdown, `rcrossref`@R-rcrossref, `bmlm` @R-bmlm,`bibtex` @R-bibtex.  
+The poster and associated abstract can be found and downloaded <font size=12> <a href = https://helenablackmore.github.io/Rwebsite/pangborn_21.html > here. </a> </font>  </small> 
+
+## References {.heading}
+
+
+
+```{r save, include=FALSE, eval=TRUE}
+pagedown::chrome_print("pangborn_21.html")
+```
+
+
+ 
