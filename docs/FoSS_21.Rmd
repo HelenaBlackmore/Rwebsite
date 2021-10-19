@@ -1,18 +1,6 @@
 ---
-title: "FoSS_21"
-author: "Helena"
-date: "10/19/2021"
-output: html_document
+title: "Festival of Social Science"
+subtitle: Carbon Footprint of what YOU eat
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
----
-title: "Festival of social science "
-subtitle: "Carbon Footprint of what you eat"
----
-
-
-
-<!-- rmarkdown::render_site() -->
+<div class = "banner"> add an image/plot here </div>

@@ -125,7 +125,7 @@ font-style: italic;
 padding-top: 0;
 }
 .references {
-font-size: 15px;
+font-size: 20px;
 line-height: 90%;
 }
 /* Create three unequal columns that floats next to each other */
@@ -336,28 +336,29 @@ Helena Blackmore<sup> 1, <a class="orcid" href="https://orcid.org/0000-0002-5867
 <div id="why" class="section level2 heading">
 <h2>Why?</h2>
 <div class="box">
-…To investigate and quantify the relationship between product-related cues, expectations, and sensory perception in the context of reduced-alcohol beer
+The aim of the study was to investigate and quantify the relationship between product-related cues, expectations, and sensory perception in the context of reduced-alcohol beer
 </div>
 </div>
 <div id="how" class="section level2 heading">
 <h2>How?</h2>
-<div class="line-block">       In a mixed design experiment, participants (<em>n</em> = 87) viewed <strong>label-based sensory information</strong> (“bitter,” “standard” and no label) and tasted <strong>beer samples differing in colour and alcohol content</strong>. Participants first rated samples without any visual cues (blind). Subsequently they examined visual cues (label and beer colour), rated <strong>expected</strong>, and after tasting, <strong>perceived bitterness, refreshment, liking and body</strong> of beer. Samples were rated on a 0-100 VAS. The procedure, beer labels and samples are illustrated below in Figures <a href="#fig:figlabels">1</a>, <a href="#fig:procedure">2</a> and <a href="#fig:samples">3</a>. We used the <code>bmlm</code><span class="citation"><sup><a href="#ref-vuorre_within-subject_2018" role="doc-biblioref">1</a></sup></span> R package to perform Bayesian within-subjects mediation analysis.</div>
+<div class="line-block">       In a mixed design experiment, participants (<em>n</em> = 87) viewed <strong>label-based sensory information</strong> (“bitter,” “refershing,” “full body” and no descriptor) and tasted <strong>beer samples differing in colour</strong> (Figure <a href="#fig:samples">1</a>) <strong>and alcohol content</strong> (0.0%, 4.5% ABV). Participants first rated samples without any visual cues (blind). Subsequently they examined visual cues and label-based information (see Figures <a href="#fig:figlabels">2</a> and <a href="#fig:samples">1</a>), rated <strong>expected</strong>, and after tasting, <strong>perceived bitterness, refreshment, liking and body</strong> of beer. Samples were rated on a 0-100 VAS (see Figure <a href="#fig:procedure">3</a>).</div>
+<p>To quantify the direct and indirect effect of the product cues, we used the <code>bmlm</code><span class="citation"><sup><a href="#ref-vuorre_within-subject_2018" role="doc-biblioref">1</a></sup></span> R package to perform Bayesian within-subjects mediation analysis and herewe report the point estimates and associated credible intervals.</p>
+<div class="figure" style="text-align: center"><span id="fig:samples"></span>
+<img src="images/beeer_study3.JPG" alt="**Beer samples presented to participants **" width="35%" />
+<p class="caption">
+Figure 1: <strong>Beer samples presented to participants </strong>
+</p>
+</div>
 <div class="figure" style="text-align: center"><span id="fig:figlabels"></span>
 <img src="images/labels_all.png" alt="**Example of ficticious beer labels used in the experiments. **" width="50%" />
 <p class="caption">
-Figure 1: <strong>Example of ficticious beer labels used in the experiments. </strong>
+Figure 2: <strong>Example of ficticious beer labels used in the experiments. </strong>
 </p>
 </div>
 <div class="figure" style="text-align: center"><span id="fig:procedure"></span>
 <img src="images/sensory1_procedure.jpg" alt="**The experimental procedure in the blind and experimental tasting sessions**" width="100%" />
 <p class="caption">
-Figure 2: <strong>The experimental procedure in the blind and experimental tasting sessions</strong>
-</p>
-</div>
-<div class="figure" style="text-align: center"><span id="fig:samples"></span>
-<img src="images/beeer_study3.JPG" alt="**Beer samples presented to participants **" width="35%" />
-<p class="caption">
-Figure 3: <strong>Beer samples presented to participants </strong>
+Figure 3: <strong>The experimental procedure in the blind and experimental tasting sessions</strong>
 </p>
 </div>
 </div>
@@ -368,22 +369,22 @@ Click on the image to enlarge it
 </div>
 <a href= "https://helenablackmore.github.io/Rwebsite/pangborn_21_results.html" >
 <div class="figure" style="text-align: center"><span id="fig:results"></span>
-<img src="images/med_all.png" alt="**Results of mediation analysis ** /nThe effect of descriptors and beer colour on expected and perceived bitterness (A), refreshment (B), liking (C) and body (D). Numeric values represent estimates of the direct effect with the indirect effect in brackets below. Presence of a line in the mediation model denotes a presence and a nature of a relationship between the variables. Solid:direct effect, bold dashed: indirect and direct effect, dashed: indirect effect" width="100%" />
+<img src="images/med_all.png" alt="**Results of mediation analysis ** /nThe effect of descriptors and beer colour on expected and perceived bitterness (A), refreshment (B), liking (C) and body (D). Numeric values represent estimates of the direct effect and associated credible intervals (CI). Presence of a line in the mediation model denotes a presence and a nature of the relationship between the variables. Solid:direct effect (CI excl.0), bold dashed: indirect and direct effect (both CI excl. 0), dashed: indirect effect (CI excl. 0)" width="100%" />
 <p class="caption">
-Figure 4: <strong>Results of mediation analysis </strong> /nThe effect of descriptors and beer colour on expected and perceived bitterness (A), refreshment (B), liking (C) and body (D). Numeric values represent estimates of the direct effect with the indirect effect in brackets below. Presence of a line in the mediation model denotes a presence and a nature of a relationship between the variables. Solid:direct effect, bold dashed: indirect and direct effect, dashed: indirect effect
+Figure 4: <strong>Results of mediation analysis </strong> /nThe effect of descriptors and beer colour on expected and perceived bitterness (A), refreshment (B), liking (C) and body (D). Numeric values represent estimates of the direct effect and associated credible intervals (CI). Presence of a line in the mediation model denotes a presence and a nature of the relationship between the variables. Solid:direct effect (CI excl.0), bold dashed: indirect and direct effect (both CI excl. 0), dashed: indirect effect (CI excl. 0)
 </p>
 </div>
 <p></a></p>
 </div>
 <div id="so-what" class="section level2 heading">
 <h2>So what?</h2>
-<div class="line-block">     We were able to demonstrate that product-related cues, especially beer colour, can significantly influence consumer’s perception of taste, flavour and mouthfeel and that this effect is reliably mediated by expectations. Based on the results of the study and underlying theoretical underpinnings<span class="citation"><sup><a href="#ref-piqueras-fiszman_sensory_2015" role="doc-biblioref">2</a>,<a href="#ref-spence_food_2016" role="doc-biblioref">3</a></sup></span> we conclude that altered expectations may, indeed be a good way to fine tune consumers’ experience. However we did not replicate our previous findings<span class="citation"><sup><a href="#ref-blackmore_taste_2021" role="doc-biblioref">4</a></sup></span> in terms of liking,perhaps suggesting that actual and labelled alcohol content are stronger predictors of liking than sensory cues and expectations. Better understanding of expectations, especially in the context of taste and flavour perception, and especially liking is necessary.</div>
+<div class="line-block">     We were able to demonstrate that product-related cues, especially beer colour, can significantly influence consumer’s perception of taste, flavour and mouthfeel and that this effect is reliably mediated by expectations. Based on the results of the study and underlying theoretical underpinnings<span class="citation"><sup><a href="#ref-piqueras-fiszman_sensory_2015" role="doc-biblioref">2</a>,<a href="#ref-spence_food_2016" role="doc-biblioref">3</a></sup></span> we conclude that altered expectations may, indeed be a good way to fine tune consumers’ experience. However we did not replicate our previous findings<span class="citation"><sup><a href="#ref-blackmore_taste_2021" role="doc-biblioref">4</a></sup></span> in terms of liking, perhaps suggesting that actual and labelled alcohol content are stronger predictors of liking than sensory cues such as colour or sensory descriptor. Better understanding of expectations, especially in the context of taste and flavour perception and consumer experience in general is needed.</div>
 <p><br>
 <br></p>
 <div id="acknowledgements" class="section level3 heading">
 <h3>Acknowledgements</h3>
-<p><small> This poster was created in RStudio, using <a href="https://github.com/brentthorne/posterdown/wiki"> <code>posterdown</code><span class="citation"><sup><a href="#ref-R-posterdown" role="doc-biblioref">5</a></sup></span> </a> and other packages:<code>rmarkdown</code>,<span class="citation"><sup><a href="#ref-R-rmarkdown" role="doc-biblioref">6</a></sup></span> <code>rcrossref</code><span class="citation"><sup><a href="#ref-R-rcrossref" role="doc-biblioref">7</a></sup></span>, <code>bmlm</code>,<span class="citation"><sup><a href="#ref-R-bmlm" role="doc-biblioref">8</a></sup></span><code>bibtex</code>.<span class="citation"><sup><a href="#ref-R-bibtex" role="doc-biblioref">9</a></sup></span><br />
-The poster and associated abstract can be found and downloaded <font size=12> <a href = https://helenablackmore.github.io/Rwebsite/pangborn_21.html > here. </a> </font> </small></p>
+<p><small> This poster was created in RStudio, using <a href="https://github.com/brentthorne/posterdown/wiki"> <code>posterdown</code>,<span class="citation"><sup><a href="#ref-R-posterdown" role="doc-biblioref">5</a></sup></span></a> and other packages: <code>rmarkdown</code>,<span class="citation"><sup><a href="#ref-R-rmarkdown" role="doc-biblioref">6</a></sup></span> <code>rcrossref</code><span class="citation"><sup><a href="#ref-R-rcrossref" role="doc-biblioref">7</a></sup></span>, <code>bmlm</code>,<span class="citation"><sup><a href="#ref-R-bmlm" role="doc-biblioref">8</a></sup></span><code>bibtex</code>.<span class="citation"><sup><a href="#ref-R-bibtex" role="doc-biblioref">9</a></sup></span><br />
+The poster and associated abstract can be found and downloaded <font size=12> <a href = https://helenablackmore.github.io/Rwebsite/pangborn_21.pdf > here. </a> </font> </small></p>
 </div>
 </div>
 <div id="references" class="section level2 unnumbered heading">
@@ -421,7 +422,7 @@ The poster and associated abstract can be found and downloaded <font size=12> <a
 
 </div>
 <div class="main">
-<p>Modifying expectations may be used to improve consumers’ experience of reduced alcohol beer<br><br> <img src="images/poster_QR.png" class="main_pic" /><br><br> <a href="https://authors.elsevier.com/a/1dMfm3O579cHHj" class="paper-link">click to read our new article</a><br><br> <img src="images/pangborn_logo.jpg" class="pangborn-logo" /></p>
+<p>Modifying expectations may be used to improve consumers’ experience of reduced alcohol beer<br><br> <img src="images/poster_QR.png" class="main_pic" /><br><br> <a href="https://doi.org/10.1016/j.foodqual.2021.104326" class="paper-link">click to read our article</a><br><br> <img src="images/pangborn_logo.jpg" class="pangborn-logo" /></p>
 <img src="images/logo_FBL_left.PNG" class="main-img-left" />
 <img src="images/logo_sussex_right.PNG" class="main-img-right" />
 </div>

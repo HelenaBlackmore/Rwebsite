@@ -17,13 +17,13 @@ navbar:
       icon: fa-project-diagram
       menu:
       - text: "conferences"
-      - text: "PANGBORN 21 results image"
-        href: pangborn_21_results.html
       - text: "PANGBORN 21 poster"
         href: pangborn_21.html
+      - text: "---------"
       - text: "workshops & lectures"
-      - text: "FoSS: Carbon footprint of what YOU eat"
-        href: Foss_21.html
+      - text: "Carbon footprint of what you eat"
+        href: FoSS_21.html
+
     
     - text: "publications"
       icon: fa-book

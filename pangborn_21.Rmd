@@ -22,7 +22,7 @@ affiliation:
 main_findings:
   - "Modifying expectations may be used to improve consumers’ experience of reduced alcohol beer"
   - '![](images/poster_QR.png){.main_pic}'
-  - '[click to read our new article](https://authors.elsevier.com/a/1dMfm3O579cHHj){.paper-link}'
+  - '[click to read our  article](https://doi.org/10.1016/j.foodqual.2021.104326){.paper-link}'
   - '![](images/pangborn_logo.jpg){.pangborn-logo}'
 main_width: 0.35
 main_textsize:	"150px"
@@ -131,7 +131,7 @@ The poster and associated abstract can be found and downloaded <font size=12> <a
 
 
 ```{r save, include=FALSE, eval=TRUE}
-pagedown::chrome_print("pangborn_21.html")
+#pagedown::chrome_print("pangborn_21.html")
 ```
 
 
