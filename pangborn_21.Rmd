@@ -44,7 +44,7 @@ output:
 link-citations: true
 bibliography: [pangborn21_poster.bib, packages.bib]
 csl: apa-numeric-superscript.csl
-reference_textsize: "15px"
+reference_textsize: "20px"
 css: style_pan21.css
 
 ---
@@ -68,7 +68,7 @@ library(bmlm)
 ## Why? {.heading}
 
 <div class="box"> 
-...To investigate and quantify the relationship between product-related cues, expectations, and sensory perception in the context of reduced-alcohol beer </div>
+The aim of the study was to investigate and quantify the relationship between product-related cues, expectations, and sensory perception in the context of reduced-alcohol beer </div>
 
 ```{r bibtex, include=FALSE}
 knitr::write_bib(c( 'rmarkdown','posterdown',  'rcrossref', 'bibtex','bmlm'), 'packages.bib')
@@ -77,7 +77,14 @@ knitr::write_bib(c( 'rmarkdown','posterdown',  'rcrossref', 'bibtex','bmlm'), 'p
 
 ## How? {.heading}
 
-|        In a mixed design experiment, participants (*n* = 87) viewed **label-based sensory information** (“bitter”, “standard” and no label) and tasted **beer samples differing in colour and alcohol content**. Participants first rated samples without any visual cues (blind). Subsequently they examined visual cues (label and beer colour), rated **expected**, and after tasting, **perceived bitterness, refreshment, liking and body** of beer. Samples were rated on a 0-100 VAS. The procedure, beer labels and samples are illustrated below in Figures \@ref(fig:figlabels), \@ref(fig:procedure) and \@ref(fig:samples). We used the `bmlm` @vuorre_within-subject_2018 R package to perform Bayesian within-subjects mediation analysis.
+|        In a mixed design experiment, participants (*n* = 87) viewed **label-based sensory information** (“bitter”, “refershing”, "full body" and no descriptor) and tasted **beer samples differing in colour** (Figure \@ref(fig:samples)) **and alcohol content** (0.0%, 4.5% ABV). Participants first rated samples without any visual cues (blind). Subsequently they examined visual cues and label-based information (see Figures \@ref(fig:figlabels) and \@ref(fig:samples)), rated **expected**, and after tasting, **perceived bitterness, refreshment, liking and body** of beer. Samples were rated on a 0-100 VAS (see Figure \@ref(fig:procedure)).  
+To quantify the direct and indirect effect of the product cues, we used the `bmlm` @vuorre_within-subject_2018 R package to perform Bayesian within-subjects mediation analysis and herewe report the point estimates and associated credible intervals.
+
+```{r samples, fig.cap="**Beer samples presented to participants **", echo=FALSE , eval=TRUE, out.width="35%"}
+
+knitr::include_graphics(here::here("images","beeer_study3.jpg"))
+
+```
 
 ```{r figlabels, fig.cap="**Example of ficticious beer labels used in the experiments. **", echo=FALSE , eval=TRUE, out.width="50%"}
 
@@ -90,18 +97,14 @@ knitr::include_graphics(here::here("images","labels_all.png"))
 knitr::include_graphics(here::here("images","sensory1_procedure.jpg" ))
 ```
 
-```{r samples, fig.cap="**Beer samples presented to participants **", echo=FALSE , eval=TRUE, out.width="35%"}
 
-knitr::include_graphics(here::here("images","beeer_study3.jpg"))
-
-```
 
 
 ## What? {.heading}
 
 <div class = " link_prompt"> Click on the image to enlarge it </div>
 <a href= "https://helenablackmore.github.io/Rwebsite/pangborn_21_results.html" >
-```{r results, fig.cap="**Results of mediation analysis ** /nThe effect of descriptors and beer colour on expected and perceived bitterness (A), refreshment (B), liking (C) and body (D). Numeric values represent estimates of the direct effect with the indirect effect in brackets below. Presence of a line in the mediation model denotes a presence and a nature of a relationship between the variables. Solid:direct effect, bold dashed: indirect and direct effect, dashed: indirect effect", echo=FALSE , eval=TRUE, out.width= "100%"}
+```{r results, fig.cap="**Results of mediation analysis ** /nThe effect of descriptors and beer colour on expected and perceived bitterness (A), refreshment (B), liking (C) and body (D). Numeric values represent estimates of the direct effect and associated credible intervals (CI). Presence of a line in the mediation model denotes a presence and a nature of the relationship between the variables. Solid:direct effect (CI excl.0), bold dashed: indirect and direct effect (both CI excl. 0), dashed: indirect effect (CI excl. 0)", echo=FALSE , eval=TRUE, out.width= "100%"}
 
 knitr::include_graphics(here::here("images","med_all.png"))
 
@@ -112,7 +115,7 @@ knitr::include_graphics(here::here("images","med_all.png"))
  
 ## So what? {.heading}
 
-|      We were able to demonstrate that product-related cues, especially beer colour, can significantly influence consumer’s perception of taste, flavour and mouthfeel and that this effect is reliably mediated by expectations. Based on the results of the study and underlying theoretical underpinnings [@piqueras-fiszman_sensory_2015; @spence_food_2016] we conclude that altered expectations may, indeed be a good way to fine tune consumers’ experience. However we did not replicate our previous findings @blackmore_taste_2021 in terms of liking,perhaps suggesting that actual and labelled alcohol content are stronger predictors of liking than sensory cues and expectations. Better understanding of expectations, especially in the context of taste and flavour perception, and especially liking is necessary.  
+|      We were able to demonstrate that product-related cues, especially beer colour, can significantly influence consumer’s perception of taste, flavour and mouthfeel and that this effect is reliably mediated by expectations. Based on the results of the study and underlying theoretical underpinnings [@piqueras-fiszman_sensory_2015; @spence_food_2016] we conclude that altered expectations may, indeed be a good way to fine tune consumers’ experience. However we did not replicate our previous findings @blackmore_taste_2021 in terms of liking, perhaps suggesting that actual and labelled alcohol content are stronger predictors of liking than sensory cues such as colour or sensory descriptor. Better understanding of expectations, especially in the context of taste and flavour perception and consumer experience in general is needed.  
 
 
 <br>
@@ -120,7 +123,7 @@ knitr::include_graphics(here::here("images","med_all.png"))
 
 ### Acknowledgements {.heading}
 
-<small> This poster was created in RStudio, using <a href="https://github.com/brentthorne/posterdown/wiki"> `posterdown`@R-posterdown  </a> and other packages:`rmarkdown` @R-rmarkdown, `rcrossref`@R-rcrossref, `bmlm` @R-bmlm,`bibtex` @R-bibtex.  
+<small> This poster was created in RStudio, using <a href="https://github.com/brentthorne/posterdown/wiki"> `posterdown` @R-posterdown,</a> and other packages: `rmarkdown` @R-rmarkdown, `rcrossref`@R-rcrossref, `bmlm` @R-bmlm,`bibtex` @R-bibtex.  
 The poster and associated abstract can be found and downloaded <font size=12> <a href = https://helenablackmore.github.io/Rwebsite/pangborn_21.pdf > here. </a> </font>  </small> 
 
 ## References {.heading}
@@ -128,7 +131,7 @@ The poster and associated abstract can be found and downloaded <font size=12> <a
 
 
 ```{r save, include=FALSE, eval=TRUE}
-#pagedown::chrome_print("pangborn_21.html")
+pagedown::chrome_print("pangborn_21.html")
 ```
 
 

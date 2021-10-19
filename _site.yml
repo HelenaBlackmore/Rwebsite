@@ -21,6 +21,9 @@ navbar:
         href: pangborn_21_results.html
       - text: "PANGBORN 21 poster"
         href: pangborn_21.html
+      - text: "workshops & lectures"
+      - text: "FoSS: Carbon footprint of what YOU eat"
+        href: Foss_21.html
     
     - text: "publications"
       icon: fa-book
