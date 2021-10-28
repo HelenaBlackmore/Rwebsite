@@ -1,7 +1,0 @@
----
-title: "Festival of Social Science"
-subtitle: Carbon Footprint of what YOU eat
----
-
-![A plotly plot](images/eg_plotly.png)
-
