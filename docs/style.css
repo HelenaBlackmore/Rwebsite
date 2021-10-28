@@ -9,8 +9,47 @@
 }
 
 
-   
 
+#top{
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+}
+ #top > div {
+     background-color: #b9cebd;
+    padding:35px;
+    color: #163a4a;
+    width:50%;
+    padding-top: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+     
+ }
     
 
     
+
+
+.logo{
+    width: 30%;
+}
+
+.link-foss {
+    size: 2em;
+    color:#163a4a;
+    
+}
+.link-foss:hover{
+    color:#43a047;
+}
+
+.logos_bottom > div {
+    width: 50%;
+}
+
+.logos_bottom{
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    align-items: center;
+}

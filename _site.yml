@@ -22,7 +22,7 @@ navbar:
       - text: "---------"
       - text: "workshops & lectures"
       - text: "Carbon footprint of what you eat"
-        href: FoSS_21.html
+        href: FoSS.html
 
     
     - text: "publications"
