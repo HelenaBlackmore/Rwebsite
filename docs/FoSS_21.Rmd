@@ -3,4 +3,5 @@ title: "Festival of Social Science"
 subtitle: Carbon Footprint of what YOU eat
 ---
 
-<div class = "banner"> add an image/plot here </div>
+![A plotly plot](images/eg_plotly.png)
+
