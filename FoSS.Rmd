@@ -1,7 +1,7 @@
 ---
 title: "Carbon footprint of what YOU eat"
-output: html_document
 ---
+<link rel="stylesheet" href="style.css" >
 <div id="top">
 
 <div id="desc">
