@@ -22,6 +22,10 @@ A 90 minute workshop focusing on the role of food in climate change and the acti
     global greenhouse gas emissions </a>
     - <a class="link-foss" href=" https://www.bbcgoodfood.com/seasonal-calendar">Seasonal produce </a>
     - <a class="link-foss" href="https://www.bbcgoodfood.com/recipes/collection/autumn-recipes"> Seasonal recipes </a>
+        - <a class="link-foss" href=" https://petition.parliament.uk/petitions/600253/sponsors/new?token=WRejkKz_9fK8UxIXz6pT"> Carbon labelling: petition </a>
+        - <a class="link-foss" href="https://figshare.com/articles/dataset/SU-EATABLE_LIFE_a_comprehensive_database_of_carbon_and_water_footprints_of_food_commodities/13271111 "> A comprehensive database of carbon and water footprints of food commodities  </a>
+    
+   
 
 </div>
 </div>
