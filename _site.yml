@@ -34,7 +34,7 @@ navbar:
       href: contact.html
       
     - text: "resume"
-      icon: fa-paper
+      icon: fa-graduation-cap
       href: cv.html
     
 
