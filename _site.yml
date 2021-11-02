@@ -32,6 +32,10 @@ navbar:
     - text: "contact me"
       icon: fa-envelope
       href: contact.html
+      
+    - text: "resume"
+      icon: fa-paper
+      href: cv.html
     
 
     
