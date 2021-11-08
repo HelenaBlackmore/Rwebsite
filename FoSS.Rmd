@@ -1,11 +1,16 @@
 ---
 title: "Carbon footprint of what YOU eat"
+bibliography: foss.bib
+nocite: '@*'
 ---
 <link rel="stylesheet" href="style.css">
 <div id="top">
 
 <div id="desc">
 A 90 minute workshop focusing on the role of food in climate change and the actions that we as consumers can take to reduce our impact. The workshop will be interactive and will include polls, mini-games, group discussion, examination of a sample weekly food shop and thinking about short and long-term goals to reduce individual impact. The aim of the workshop is to demystify the role of food systems in climate change and to inform and empower consumers with knowledge necessary to make informed decisions when shopping for food.
+
+# References
+<div id="refs"> </div>
 </div>
 
 <div id="list">
@@ -22,8 +27,10 @@ A 90 minute workshop focusing on the role of food in climate change and the acti
     global greenhouse gas emissions </a>
     - <a class="link-foss" href=" https://www.bbcgoodfood.com/seasonal-calendar">Seasonal produce </a>
     - <a class="link-foss" href="https://www.bbcgoodfood.com/recipes/collection/autumn-recipes"> Seasonal recipes </a>
-        - <a class="link-foss" href=" https://petition.parliament.uk/petitions/600253/sponsors/new?token=WRejkKz_9fK8UxIXz6pT"> Carbon labelling: petition </a>
-        - <a class="link-foss" href="https://figshare.com/articles/dataset/SU-EATABLE_LIFE_a_comprehensive_database_of_carbon_and_water_footprints_of_food_commodities/13271111 "> A comprehensive database of carbon and water footprints of food commodities  </a>
+    - <a class="link-foss" href=" https://petition.parliament.uk/petitions/600253/sponsors/new?token=WRejkKz_9fK8UxIXz6pT"> Carbon labelling: petition </a>
+    - <a class="link-foss" href="https://figshare.com/articles/dataset/SU-EATABLE_LIFE_a_comprehensive_database_of_carbon_and_water_footprints_of_food_commodities/13271111 "> A comprehensive database of carbon and water footprints of food commodities  </a>
+
+
     
    
 
