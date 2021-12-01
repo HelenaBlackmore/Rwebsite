@@ -23,6 +23,10 @@ navbar:
       - text: "workshops & lectures"
       - text: "Carbon footprint of what you eat"
         href: FoSS.html
+      - text: "---------"
+      - text: "other"
+      - text: "CFG project: data viz website"
+        href: https://helenablackmore.github.io/CFG_webdevproject/
 
     
     - text: "publications"
