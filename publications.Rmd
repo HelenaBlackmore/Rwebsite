@@ -3,6 +3,18 @@ title: "publications"
 
 ---
 
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src = 'https://www.googletagmanager.com/gtag/js?id=G-YPS8M99VT4'> </script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  
+  gtag('config', 'G-YPS8M99VT4')
+</script>
+</head>
+
 <a href=https://doi.org/10.1016/j.foodqual.2019.103855 target="_blank">![The effect of implicit and explicit extrinsic cues on hedonic and sensory expectations in the context of beer](images/s1_screenshot.png)</a>
 
 <a href=https://doi.org/10.1016/j.foodqual.2021.104326 target="_blank">![A taste of things to come: The effect of extrinisc and intrinsic cues on perceived properties of beer mediated by expectations](images/s2_screenshot.png)</a>

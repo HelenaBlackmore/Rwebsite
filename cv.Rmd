@@ -2,4 +2,16 @@
 title: "Resume"
 
 ---
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src = 'https://www.googletagmanager.com/gtag/js?id=G-YPS8M99VT4'> </script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  
+  gtag('config', 'G-YPS8M99VT4')
+</script>
+</head>
+
 <embed src="images/resume.pdf" type="application/pdf" width = "100%" height= "500px">
